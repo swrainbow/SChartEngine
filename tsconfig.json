@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "outDir": "./lib",
+        "module": "CommonJS",
+        "target": "ES6",
+        "declaration": true,
+        "declarationDir": "./types",
+        "rootDir": "./src",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "lib": [
+            "DOM",
+            "ESNext"
+        ]
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "compileOnSave": true
+}
