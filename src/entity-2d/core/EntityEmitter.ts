@@ -98,7 +98,7 @@ class EntityEmitter {
      * @param listener 回调函数
      * @returns 
      */
-    once(type: InteractionType, listener) {
+    once(type: InteractionType, listener: Listener) {
         this.addEventListener(type, listener, false);
         return this;
     }
