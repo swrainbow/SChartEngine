@@ -1,31 +1,47 @@
 import { Vector2 } from "@s7n/math";
-import { BaseStyle, Combine } from "./base";
+import { dirtyProperty } from "../../dirty";
+import { BaseShape } from "./BaseShape";
+import { StyleOption } from "./style";
 
-class PolygonShape {
-
-    path: Vector2[] = [];
+class Polygon extends BaseShape {
+    /**
+     * 路径数据
+     */
+    @dirtyProperty private pathData: Vector2[] = [];
 
     /**
-     * 多边形是否闭合 默认 true
+     * 多边形是否闭合（默认：true）
      */
-    closed: boolean = true;
-}
+    @dirtyProperty closed: boolean = true;
 
-
-class Polygon extends Combine(PolygonShape, BaseStyle) {
+    constructor(data: Vector2[], styleOption?: Partial<StyleOption>) {
+        super(styleOption);
+        this.pathData = data;
+    }
 
     /**
-     * 添加多边形路径
-     * @param data 
-     * @returns 
+     * 设置多边形的路径
      */
-    addPathPoints(data: Vector2 | Vector2[]) {
-        const path = Array.isArray(data) ? [...data] : [data];
-        this.shape.path.push(...path);
+    setPathData(data: Vector2[]) {
+        this.pathData = [...data];
         return this;
+    }
+
+    /**
+     * 添加多边形的路径
+     */
+    addPathData(data: Vector2 | Vector2[]) {
+        const pathData = Array.isArray(data) ? [...data] : [data];
+        this.pathData.push(...pathData);
+        return this;
+    }
+
+    /**
+     * 获取多边形的路径
+     */
+    getPathData() {
+        return [...this.pathData];
     }
 }
 
-export {
-    Polygon
-}
+export { Polygon };

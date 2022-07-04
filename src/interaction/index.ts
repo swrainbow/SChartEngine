@@ -1,0 +1,1 @@
+export { EntityInteraction } from './entity'

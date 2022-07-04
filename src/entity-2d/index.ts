@@ -15,7 +15,6 @@
  export { Polygon } from './shape/Polygon';
  export { Rect } from './shape/Rect';
  export { Sector } from './shape/Sector';
- export { ShapeEntity, BaseStyle, Combine } from './shape/base';
  /**
   * 文本实体
   */

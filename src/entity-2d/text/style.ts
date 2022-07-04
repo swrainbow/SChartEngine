@@ -1,4 +1,4 @@
-import { BaseStyle } from "../shape/base";
+import { BaseStyle } from "../shape/style";
 
 export class TextStyle extends BaseStyle {
     
