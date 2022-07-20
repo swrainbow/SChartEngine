@@ -27,4 +27,8 @@
   * 实体工具类
   */
  export { EntityUtils } from './entityUtils';
+
+ export { StyleOption } from './shape/style'
+
+ export { BaseShape } from './shape/BaseShape'
  

@@ -1,4 +1,4 @@
-import { IVec2 } from "@s7n/math";
+import { IVec2 } from "s-mathutil";
 import { BaseInteraction } from "./BaseInteraction";
 import { BaseEvent, InteractionType } from "./type";
 import { EventCoorType, getCoorFromEvent } from "./utils";
@@ -144,7 +144,7 @@ class DOMListener {
         document.removeEventListener('pointerup', this.onPointerUp);
     }
 
-    private onDblClick = (event: PointerEvent) => {
+    private onDbClick = (event: PointerEvent) => {
         this.trigger(InteractionType.DBClick, event)
     }
 

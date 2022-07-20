@@ -1,4 +1,4 @@
-import { Vector2 } from "@s7n/math";
+import { Vector2 } from "s-mathutil";
 import { Command } from "../../command";
 import { Entity2D, EntityUtils } from "../../entity-2d";
 import { BaseInteraction, InteractionEvent, InteractionType } from "../../listener";

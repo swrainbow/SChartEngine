@@ -1,4 +1,4 @@
-import * as M from '@s7n/math';
+import * as M from 's-mathutil';
 import { Entity2D, EntityUtils } from '../../entity-2d';
 
 export function hitEnityTest(entity: Entity2D, point: M.Vector2) {

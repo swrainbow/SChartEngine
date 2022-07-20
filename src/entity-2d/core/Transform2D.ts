@@ -1,4 +1,4 @@
-import { Matrix3, Vector2} from "@s7n/math";
+import { Matrix3, Vector2} from "s-mathutil";
 import { dirtyProperty} from '../../dirty';
 import { Entity2D } from "./Entity2D";
 

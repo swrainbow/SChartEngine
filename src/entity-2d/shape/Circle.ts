@@ -1,4 +1,4 @@
-import { IVec2, Vector2 } from "@s7n/math";
+import { IVec2, Vector2 } from "s-mathutil";
 import { dirtyProperty } from "../../dirty";
 import { BaseShape } from "./BaseShape";
 import { StyleOption } from './style';

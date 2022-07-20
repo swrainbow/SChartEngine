@@ -1,5 +1,5 @@
 import { EventCoorType } from './utils';
-import { Vector2 } from "@s7n/math";
+import { Vector2 } from "s-mathutil";
 import { Entity2D, RenderTree } from "../entity-2d";
 import { InteractionEvent } from "./InteractionEvent";
 import { DOMEvent, InteractionType } from "./type";

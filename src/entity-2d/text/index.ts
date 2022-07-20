@@ -24,6 +24,13 @@ class Text extends Entity2D {
         }
         return this;
     }
+
+    /**
+     * 获取当前文本的绘制样式
+     */
+    getStyleOption() {
+        return this.style;
+    }
 }
 
 export {

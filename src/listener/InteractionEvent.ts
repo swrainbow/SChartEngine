@@ -1,4 +1,4 @@
-import { Vector2 } from "@s7n/math";
+import { Vector2 } from "s-mathutil";
 import { Entity2D } from "../entity-2d";
 import { DOMEvent, InteractionType } from "./type";
 import { EventCoorType, getCoorFromEvent } from "./utils";

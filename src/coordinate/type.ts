@@ -1,4 +1,4 @@
-import { Vector2 } from "@s7n/math";
+import { Vector2 } from "s-mathutil";
 
 export interface CoordinateSystemOptions {
     /**
